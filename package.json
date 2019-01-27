@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Brzusko/Thinkers-Backend#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.7"
   }
 }
