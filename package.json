@@ -1,0 +1,22 @@
+{
+  "name": "thinkers-backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brzusko/Thinkers-Backend.git"
+  },
+  "author": "Brzusko aka Spray <Wojtek Brzuszkiewicz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brzusko/Thinkers-Backend/issues"
+  },
+  "homepage": "https://github.com/Brzusko/Thinkers-Backend#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
