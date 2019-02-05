@@ -3,7 +3,8 @@ const Mongoose = require('mongoose');
 const ServerSchema = new Mongoose.Schema({
     guid:{
         type: String,
-        unique: true
+        unique: true,
+        required: true
     },
     rescuePassword:{
         type: String,
@@ -20,14 +21,8 @@ const ServerSchema = new Mongoose.Schema({
     joinedAt: {
         type: Date
     },
-    botChannelAcces:{
-        type: Array
-    },
-    records:{
-        type: Array
-    }
 });
 
-const ServerModel = Mongoose.model('ServerModel', ServerSchema,'Discord');
+const ServerModel = Mongoose.model('ServerModel', ServerSchema,'Guilds');
 
 module.exports = ServerModel;
