@@ -9,6 +9,7 @@ const morgan = require('morgan');
 //Developer modules
 const ServerModel = require('./schemas/server_schema.js');
 const GuildRoute = require('./routes/Guild.js');
+const ApiRoute = require('./routes/ApiTokens.js');
 Mongoose.connect('mongodb://localhost:27017/Discord');
 
 db = Mongoose.connection;
@@ -27,7 +28,7 @@ app.use((req,res,next)=>{
     next();
 });
 
-app.use('/', GuildRoute);
+app.use('/', GuildRoute, ApiRoute);
 
 app.listen(Config.port, ()=>{
     console.log("Listening on port " + Config.port);
