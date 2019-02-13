@@ -21,6 +21,25 @@ const ServerSchema = new Mongoose.Schema({
     joinedAt: {
         type: Date
     },
+    messages:{
+        type: Number,
+        default: 0
+    },
+    usersCount:{
+        type: Number
+    },
+    usersJoined:{
+        type: Number,
+        default: 0
+    },
+    usersLeft:{
+        type: Number,
+        default: 0
+    },
+    guildName:{
+        type: String,
+        required: true
+    }
 });
 
 const ServerModel = Mongoose.model('ServerModel', ServerSchema,'Guilds');
